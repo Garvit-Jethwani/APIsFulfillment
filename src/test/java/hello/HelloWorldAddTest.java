@@ -76,6 +76,7 @@ These test scenarios cover various cases, including positive and negative intege
 */
 
 // ********RoostGPT********
+
 package hello;
 
 import org.junit.jupiter.api.DisplayName;
@@ -136,6 +137,12 @@ public class HelloWorldAddTest {
 		return Stream.of(Arguments.of(5, 5), Arguments.of(-10, -10), Arguments.of(0, 0));
 	}
 
+	/*
+	 * This test case assumes that adding the maximum and minimum integer values
+	 * should result in -1. However, this may not be the expected behavior according
+	 * to the business logic. If the expected result is different, update the test
+	 * case accordingly or remove it if it's not a valid scenario.
+	 */
 	@Test
 	@DisplayName("Adding the maximum and minimum integer values")
 	void addMaxAndMinIntegerValues() {
