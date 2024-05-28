@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.1:39]","start":1716871389465,"end":1716871389585,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.1:39] 04:43:09.465-04:43:09.585 Retrieve Search Time Slot","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.2:39]","start":1716871389610,"end":1716871389621,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.2:39] 04:43:09.610-04:43:09.621 Retrieve Search Time Slot","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.3:39]","start":1716871389637,"end":1716871389648,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.3:39] 04:43:09.637-04:43:09.648 Retrieve Search Time Slot","className":"failed"},{"id":4,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.4:39]","start":1716871389664,"end":1716871389675,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.4:39] 04:43:09.664-04:43:09.675 Retrieve Search Time Slot","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.5:39]","start":1716871389690,"end":1716871389699,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.5:39] 04:43:09.690-04:43:09.699 Retrieve Search Time Slot","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.6:39]","start":1716871389714,"end":1716871389724,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.6:39] 04:43:09.714-04:43:09.724 Retrieve Search Time Slot","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.7:39]","start":1716871389738,"end":1716871389747,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.7:39] 04:43:09.738-04:43:09.747 Retrieve Search Time Slot","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.8:39]","start":1716871389760,"end":1716871389806,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.8:39] 04:43:09.760-04:43:09.806 Retrieve Search Time Slot","className":"failed"},{"id":9,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.9:39]","start":1716871389819,"end":1716871389827,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.9:39] 04:43:09.819-04:43:09.827 Retrieve Search Time Slot","className":"failed"},{"id":10,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.10:39]","start":1716871389837,"end":1716871389844,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[1.10:39] 04:43:09.837-04:43:09.844 Retrieve Search Time Slot","className":"failed"},{"id":11,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[2:41]","start":1716871389853,"end":1716871390432,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[2:41] 04:43:09.853-04:43:10.432 Too Many Requests","className":"failed"},{"id":12,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[3:60]","start":1716871390442,"end":1716871390484,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[3:60] 04:43:10.442-04:43:10.484 Internal Server Error","className":"failed"},{"id":13,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[4:79]","start":1716871390492,"end":1716871390525,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[4:79] 04:43:10.492-04:43:10.525 Service Unavailable","className":"failed"},{"id":14,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[5:98]","start":1716871390532,"end":1716871390558,"title":"src\/test\/java\/org\/springframework\/api_tests\/searchTimeSlot_get[5:98] 04:43:10.532-04:43:10.558 Gateway Timeout","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
