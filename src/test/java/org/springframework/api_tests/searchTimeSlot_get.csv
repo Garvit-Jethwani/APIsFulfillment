@@ -1,0 +1,11 @@
+addressId,subscriberId,associatedDocument,startDate,finishDate,orderType,addressChangeFlag,productType,priorityFlag,priorityReason,statusCode,responseType,responseCode,responseMessage
+45678,"CUST0001","DOC001","2023-06-01T09:00:00","2023-06-14T17:00:00","Instalacao",true,"[""Banda Larga""]",false,"",,,,,
+12345,"CUST0002","DOC002","2023-06-02T10:30:00","2023-06-15T16:30:00","Retirada",false,"[""Banda Larga""]",false,"",,,,,
+78901,"CUST0003","DOC003","2023-06-03T08:45:00","2023-06-16T14:45:00","RemanejamentoPonto",false,"[""Banda Larga""]",false,"",,,,,
+23456,"CUST0004","DOC004","2023-06-04T11:15:00","2023-06-17T15:15:00","ChamadoTecnico",false,"[""Banda Larga""]",true,"Problema urgente",,,,,
+89012,"CUST0005","DOC005","2023-06-05T13:00:00","2023-06-18T18:00:00","Instalacao",false,"[""Banda Larga""]",false,"",,,,,
+34567,"CUST0006","DOC006","2023-06-06T14:30:00","2023-06-19T19:30:00","Retirada",false,"[""Banda Larga""]",false,"",,,,,
+90123,"CUST0007","DOC007","2023-06-07T12:45:00","2023-06-20T17:45:00","RemanejamentoPonto",false,"[""Banda Larga""]",false,"",,,,,
+56789,"CUST0008","DOC008","2023-06-08T16:00:00","2023-06-21T20:00:00","ChamadoTecnico",false,"[""Banda Larga""]",true,"Cliente VIP",,,,,
+43210,"CUST0009","DOC009","2023-06-09T09:30:00","2023-06-22T15:30:00","Instalacao",true,"[""Banda Larga""]",false,"",,,,,
+21987,"CUST0010","DOC010","2023-06-10T11:00:00","2023-06-23T16:00:00","Retirada",false,"[""Banda Larga""]",false,"",,,,,
