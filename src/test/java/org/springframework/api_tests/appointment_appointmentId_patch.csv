@@ -1,0 +1,11 @@
+slotId,reason,appointmentId
+1,"No-Show","SA-562403"
+2,"Cancelled by provider","SA-234719"
+3,"Cancelled by customer","SA-908123"
+4,"No-Show","SA-347812"
+5,"Cancelled by provider","SA-761234"
+6,"Cancelled by customer","SA-098765"
+7,"No-Show","SA-845239"
+8,"Cancelled by provider","SA-512378"
+9,"Cancelled by customer","SA-673421"
+10,"No-Show","SA-190834"
