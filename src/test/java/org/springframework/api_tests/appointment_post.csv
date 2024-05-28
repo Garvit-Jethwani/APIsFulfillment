@@ -1,0 +1,11 @@
+status,example,expectedStatus
+"OK","{""appointment"":{""slot"":{""id"":""bff13821-73c3-42cc-9327-b05c7df5a67f""},""reason"":""Agendamento para Instalação de Fibra""}}","OK"
+"OK","{""appointment"":{""slot"":{""id"":""c2d4e6f8-1a2b-3c4d-5e6f-7g8h9i0j1k2l""},""reason"":""Agendamento de Reparo""}}","OK"
+"OK","{""appointment"":{""slot"":{""id"":""3m4n5o6p-7q8r-9s0t-1u2v-3w4x5y6z7a8b""},""reason"":""Visita Técnica""}}","OK"
+"OK","{""appointment"":{""slot"":{""id"":""9c0d1e2f-3g4h-5i6j-7k8l-9m0n1o2p3q4r""},""reason"":""Instalação de Equipamento""}}","OK"
+"OK","{""appointment"":{""slot"":{""id"":""5s6t7u8v-9w0x-1y2z-3a4b-5c6d7e8f9g0h""},""reason"":""Manutenção Preventiva""}}","OK"
+"OK","{""appointment"":{""slot"":{""id"":""1i2j3k4l-5m6n-7o8p-9q0r-1s2t3u4v5w6x""},""reason"":""Configuração de Roteador""}}","OK"
+"OK","{""appointment"":{""slot"":{""id"":""7y8z9a0b-1c2d-3e4f-5g6h-7i8j9k0l1m2n""},""reason"":""Atualização de Firmware""}}","OK"
+"OK","{""appointment"":{""slot"":{""id"":""3o4p5q6r-7s8t-9u0v-1w2x-3y4z5a6b7c8d""},""reason"":""Substituição de Equipamento""}}","OK"
+"OK","{""appointment"":{""slot"":{""id"":""9e0f1g2h-3i4j-5k6l-7m8n-9o0p1q2r3s4t""},""reason"":""Teste de Velocidade""}}","OK"
+"OK","{""appointment"":{""slot"":{""id"":""5u6v7w8x-9y0z-1a2b-3c4d-5e6f7g8h9i0j""},""reason"":""Verificação de Sinal""}}","OK"

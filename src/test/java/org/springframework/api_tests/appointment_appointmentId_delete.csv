@@ -1,0 +1,11 @@
+appointmentId,appointmentReason,appointmentComments
+"SA-284759","Cancelamento Checkout","Cliente solicitou cancelamento"
+"SA-195032","Reagendamento","Reagendar para próxima semana"
+"SA-637481","Indisponibilidade técnica","Técnico ficou doente"
+"SA-410865","Cancelamento Checkout","Serviço não mais necessário"
+"SA-729310","Reagendamento","Cliente mudou data da visita"
+"SA-053926","Indisponibilidade técnica","Veículo quebrou a caminho"
+"SA-871243","Cancelamento Checkout","Cliente cancelou por telefone"
+"SA-602578","Reagendamento","Agendar para o mês que vem"
+"SA-439167","Indisponibilidade técnica","Equipamento com defeito"
+"SA-756024","Cancelamento Checkout","Endereço não localizado"
