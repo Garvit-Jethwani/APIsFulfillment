@@ -1,0 +1,11 @@
+subscriberId,appointmentId,confirmation
+"VTAL001","SA-562403",true
+"VTAL002","SA-562404",false
+"VTAL003","SA-562405",true
+"VTAL004","SA-562406",true
+"VTAL005","SA-562407",false
+"VTAL006","SA-562408",true
+"VTAL007","SA-562409",false
+"VTAL008","SA-562410",true
+"VTAL009","SA-562411",true
+"VTAL010","SA-562412",false
