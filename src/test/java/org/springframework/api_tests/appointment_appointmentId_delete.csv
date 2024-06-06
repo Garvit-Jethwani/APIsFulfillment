@@ -1,0 +1,11 @@
+appointmentId,appointmentReason,appointmentComments
+"SA-593625","Conflito de agenda","Cliente precisa remarcar"
+"SA-102748","Cancelamento Checkout",
+"SA-284019","Problema de saúde","Médico não poderá comparecer"
+"SA-847362","Falta de materiais","Equipamento quebrado"
+"SA-519073","Mudança de planos","Cliente desistiu do procedimento"
+"SA-630481","Erro de agendamento","Data e horário incorretos"
+"SA-957216","Cancelamento Checkout","Cliente não confirmou presença"
+"SA-741830","Indisponibilidade do profissional","Médico de férias"
+"SA-369254","Atraso do paciente","Cliente não chegou no horário"
+"SA-206587","Cancelamento Checkout","Agendamento duplicado"
