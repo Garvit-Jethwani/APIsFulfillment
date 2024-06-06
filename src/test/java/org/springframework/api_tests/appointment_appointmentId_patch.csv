@@ -1,0 +1,11 @@
+appointmentId,slotId,reason
+"SA-562403","SL-783902","dental checkup"
+"SA-102985","SL-209481","annual physical"
+"SA-398756","SL-647382","eye exam"
+"SA-847291","SL-519034","flu shot"
+"SA-629173","SL-815246","blood work"
+"SA-315680","SL-437851","skin screening"
+"SA-741538","SL-962087","allergy test"
+"SA-269047","SL-380715","prescription refill"
+"SA-583124","SL-724569","follow-up visit"
+"SA-906412","SL-158673","vaccination"

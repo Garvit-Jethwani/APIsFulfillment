@@ -1,0 +1,11 @@
+appointmentId,appointmentReason,appointmentComments
+"SA-562403","Cancelamento Checkout","Cliente solicitou cancelamento por telefone"
+"SA-129876","Reagendamento","Reagendado para próxima semana a pedido do cliente"
+"SA-345210","Cancelamento Checkout","Conflito de agenda do cliente"
+"SA-987654","Indisponibilidade do Serviço","Técnico ficou doente e não poderá comparecer"
+"SA-135790","Cancelamento Checkout","Cliente não poderá estar presente no horário agendado"
+"SA-246801","Reagendamento","Cliente solicitou novo horário mais cedo no mesmo dia"
+"SA-777333","Indisponibilidade do Serviço","Equipamento necessário para o serviço está em manutenção"
+"SA-555999","Cancelamento Checkout","Endereço fornecido pelo cliente está incorreto"
+"SA-010101","Reagendamento","Reagendado para o dia seguinte conforme disponibilidade do cliente"
+"SA-121212","Cancelamento Checkout","Cliente desistiu do serviço solicitado"
