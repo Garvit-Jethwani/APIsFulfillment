@@ -1,0 +1,2855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"6f8cd235-f92a-49f5-813f-58d4ad531fca",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.org.springframework.api_tests.appointment_appointmentId_patch</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">7</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-07-02 05:00:12 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:74]"><span>[1.1:74]</span> <span>Patch Appointment with valid data</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:74]"><span>[1.2:74]</span> <span>Patch Appointment with valid data</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:76]"><span>[2:76]</span> <span>Patch Appointment with invalid appointmentId</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:96]"><span>[3:96]</span> <span>Patch Appointment with invalid slot id</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:116]"><span>[4:116]</span> <span>Patch Appointment without authorization</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[5:135]"><span>[5:135]</span> <span>Patch Appointment with invalid scope</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[6:155]"><span>[6:155]</span> <span>Patch Appointment with locked appointment</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Update Appointment</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:74]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:74]</span>
+                <span class="scenario-name">Patch Appointment with valid data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>55</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:74]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/appointment/SA-562403&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.21">{
+  &quot;appointment&quot;: {
+    &quot;slot&quot;: {
+      &quot;id&quot;: &quot;bff13821-73c3-42cc-9327-b05c7df5a67f&quot;
+    },
+    &quot;reason&quot;: &quot;Agendamento para Instalação de Fibra&quot;
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">48</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.32">05:00:11.943 request:
+1 &gt; PATCH http://localhost:4010/appointment/SA-562403
+1 &gt; Authorization: Bearer dummy AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 120
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;appointment&quot;:{&quot;slot&quot;:{&quot;id&quot;:&quot;bff13821-73c3-42cc-9327-b05c7df5a67f&quot;},&quot;reason&quot;:&quot;Agendamento para Instalação de Fibra&quot;}}
+
+05:00:11.986 response time in milliseconds: 42
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; sl-violations: [{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;order&quot;,&quot;type&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;enum&quot;,&quot;message&quot;:&quot;Response body property order.type must be equal to one of the allowed values: InstalaÃ§Ã£o, Retirada, RemanejamentoPonto, ChamadoTecnico&quot;},{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;control&quot;,&quot;code&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Response body property control.code must be string&quot;}]
+1 &lt; Content-type: application/json
+1 &lt; Content-Length: 408
+1 &lt; Date: Tue, 02 Jul 2024 05:00:11 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.34">
+      <div class="step-ref failed">34</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell failed">4</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.34">{
+  &quot;order&quot;: {
+    &quot;type&quot;: &quot;#string&quot;,
+    &quot;associatedDocument&quot;: &quot;#string&quot;,
+    &quot;addressChange&quot;: {
+      &quot;flag&quot;: &quot;#boolean&quot;
+    }
+  },
+  &quot;customer&quot;: {
+    &quot;subscriberId&quot;: &quot;#string&quot;
+  },
+  &quot;appointment&quot;: {
+    &quot;id&quot;: &quot;#string&quot;,
+    &quot;startDate&quot;: &quot;#string&quot;,
+    &quot;finishDate&quot;: &quot;#string&quot;,
+    &quot;priority&quot;: {
+      &quot;flag&quot;: &quot;#boolean&quot;,
+      &quot;reason&quot;: &quot;##string&quot;
+    }
+  },
+  &quot;address&quot;: {
+    &quot;id&quot;: &quot;#number&quot;
+  },
+  &quot;products&quot;: {
+    &quot;product&quot;: &quot;#array&quot;
+  },
+  &quot;control&quot;: {
+    &quot;type&quot;: &quot;#string&quot;,
+    &quot;message&quot;: &quot;#string&quot;,
+    &quot;code&quot;: &quot;#string&quot;
+  }
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="1.34">05:00:11.992 src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:34
+And match response ==
+&quot;&quot;&quot;
+{
+  &quot;order&quot;: {
+    &quot;type&quot;: &quot;#string&quot;,
+    &quot;associatedDocument&quot;: &quot;#string&quot;,
+    &quot;addressChange&quot;: {
+      &quot;flag&quot;: &quot;#boolean&quot;
+    }
+  },
+  &quot;customer&quot;: {
+    &quot;subscriberId&quot;: &quot;#string&quot;
+  },
+  &quot;appointment&quot;: {
+    &quot;id&quot;: &quot;#string&quot;,
+    &quot;startDate&quot;: &quot;#string&quot;,
+    &quot;finishDate&quot;: &quot;#string&quot;,
+    &quot;priority&quot;: {
+      &quot;flag&quot;: &quot;#boolean&quot;,
+      &quot;reason&quot;: &quot;##string&quot;
+    }
+  },
+  &quot;address&quot;: {
+    &quot;id&quot;: &quot;#number&quot;
+  },
+  &quot;products&quot;: {
+    &quot;product&quot;: &quot;#array&quot;
+  },
+  &quot;control&quot;: {
+    &quot;type&quot;: &quot;#string&quot;,
+    &quot;message&quot;: &quot;#string&quot;,
+    &quot;code&quot;: &quot;#string&quot;
+  }
+}
+&quot;&quot;&quot;
+match failed: EQUALS
+  $ | not equal | match failed for name: &#39;control&#39; (MAP:MAP)
+  {&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+  {&quot;order&quot;:{&quot;type&quot;:&quot;#string&quot;,&quot;associatedDocument&quot;:&quot;#string&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:&quot;#boolean&quot;}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;#string&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;#string&quot;,&quot;startDate&quot;:&quot;#string&quot;,&quot;finishDate&quot;:&quot;#string&quot;,&quot;priority&quot;:{&quot;flag&quot;:&quot;#boolean&quot;,&quot;reason&quot;:&quot;##string&quot;}},&quot;address&quot;:{&quot;id&quot;:&quot;#number&quot;},&quot;products&quot;:{&quot;product&quot;:&quot;#array&quot;},&quot;control&quot;:{&quot;type&quot;:&quot;#string&quot;,&quot;message&quot;:&quot;#string&quot;,&quot;code&quot;:&quot;#string&quot;}}
+
+    $.control | not equal | match failed for name: &#39;code&#39; (MAP:MAP)
+    {&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}
+    {&quot;type&quot;:&quot;#string&quot;,&quot;code&quot;:&quot;#string&quot;,&quot;message&quot;:&quot;#string&quot;}
+
+      $.control.code | not a string (NUMBER:STRING)
+      201
+      &#39;#string&#39;
+
+src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:34
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.appointment.id == &#39;SA-562403&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.70">
+      <div class="step-ref skipped">70</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.type == &#39;S&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.code == &#39;201&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:74]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:74]</span>
+                <span class="scenario-name">Patch Appointment with valid data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>34</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:74]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:74]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/appointment/SA-562404&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.21">{
+  &quot;appointment&quot;: {
+    &quot;slot&quot;: {
+      &quot;id&quot;: &quot;cff13821-73c3-42cc-9327-b05c7df5a67g&quot;
+    },
+    &quot;reason&quot;: &quot;Agendamento para Retirada de Equipamento&quot;
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.32">05:00:12.019 request:
+1 &gt; PATCH http://localhost:4010/appointment/SA-562404
+1 &gt; Authorization: Bearer dummy AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 122
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;appointment&quot;:{&quot;slot&quot;:{&quot;id&quot;:&quot;cff13821-73c3-42cc-9327-b05c7df5a67g&quot;},&quot;reason&quot;:&quot;Agendamento para Retirada de Equipamento&quot;}}
+
+05:00:12.035 response time in milliseconds: 13
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; sl-violations: [{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;order&quot;,&quot;type&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;enum&quot;,&quot;message&quot;:&quot;Response body property order.type must be equal to one of the allowed values: InstalaÃ§Ã£o, Retirada, RemanejamentoPonto, ChamadoTecnico&quot;},{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;control&quot;,&quot;code&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Response body property control.code must be string&quot;}]
+1 &lt; Content-type: application/json
+1 &lt; Content-Length: 408
+1 &lt; Date: Tue, 02 Jul 2024 05:00:12 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.34">
+      <div class="step-ref failed">34</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.34">{
+  &quot;order&quot;: {
+    &quot;type&quot;: &quot;#string&quot;,
+    &quot;associatedDocument&quot;: &quot;#string&quot;,
+    &quot;addressChange&quot;: {
+      &quot;flag&quot;: &quot;#boolean&quot;
+    }
+  },
+  &quot;customer&quot;: {
+    &quot;subscriberId&quot;: &quot;#string&quot;
+  },
+  &quot;appointment&quot;: {
+    &quot;id&quot;: &quot;#string&quot;,
+    &quot;startDate&quot;: &quot;#string&quot;,
+    &quot;finishDate&quot;: &quot;#string&quot;,
+    &quot;priority&quot;: {
+      &quot;flag&quot;: &quot;#boolean&quot;,
+      &quot;reason&quot;: &quot;##string&quot;
+    }
+  },
+  &quot;address&quot;: {
+    &quot;id&quot;: &quot;#number&quot;
+  },
+  &quot;products&quot;: {
+    &quot;product&quot;: &quot;#array&quot;
+  },
+  &quot;control&quot;: {
+    &quot;type&quot;: &quot;#string&quot;,
+    &quot;message&quot;: &quot;#string&quot;,
+    &quot;code&quot;: &quot;#string&quot;
+  }
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="2.34">05:00:12.040 src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:34
+And match response ==
+&quot;&quot;&quot;
+{
+  &quot;order&quot;: {
+    &quot;type&quot;: &quot;#string&quot;,
+    &quot;associatedDocument&quot;: &quot;#string&quot;,
+    &quot;addressChange&quot;: {
+      &quot;flag&quot;: &quot;#boolean&quot;
+    }
+  },
+  &quot;customer&quot;: {
+    &quot;subscriberId&quot;: &quot;#string&quot;
+  },
+  &quot;appointment&quot;: {
+    &quot;id&quot;: &quot;#string&quot;,
+    &quot;startDate&quot;: &quot;#string&quot;,
+    &quot;finishDate&quot;: &quot;#string&quot;,
+    &quot;priority&quot;: {
+      &quot;flag&quot;: &quot;#boolean&quot;,
+      &quot;reason&quot;: &quot;##string&quot;
+    }
+  },
+  &quot;address&quot;: {
+    &quot;id&quot;: &quot;#number&quot;
+  },
+  &quot;products&quot;: {
+    &quot;product&quot;: &quot;#array&quot;
+  },
+  &quot;control&quot;: {
+    &quot;type&quot;: &quot;#string&quot;,
+    &quot;message&quot;: &quot;#string&quot;,
+    &quot;code&quot;: &quot;#string&quot;
+  }
+}
+&quot;&quot;&quot;
+match failed: EQUALS
+  $ | not equal | match failed for name: &#39;control&#39; (MAP:MAP)
+  {&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+  {&quot;order&quot;:{&quot;type&quot;:&quot;#string&quot;,&quot;associatedDocument&quot;:&quot;#string&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:&quot;#boolean&quot;}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;#string&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;#string&quot;,&quot;startDate&quot;:&quot;#string&quot;,&quot;finishDate&quot;:&quot;#string&quot;,&quot;priority&quot;:{&quot;flag&quot;:&quot;#boolean&quot;,&quot;reason&quot;:&quot;##string&quot;}},&quot;address&quot;:{&quot;id&quot;:&quot;#number&quot;},&quot;products&quot;:{&quot;product&quot;:&quot;#array&quot;},&quot;control&quot;:{&quot;type&quot;:&quot;#string&quot;,&quot;message&quot;:&quot;#string&quot;,&quot;code&quot;:&quot;#string&quot;}}
+
+    $.control | not equal | match failed for name: &#39;code&#39; (MAP:MAP)
+    {&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}
+    {&quot;type&quot;:&quot;#string&quot;,&quot;code&quot;:&quot;#string&quot;,&quot;message&quot;:&quot;#string&quot;}
+
+      $.control.code | not a string (NUMBER:STRING)
+      201
+      &#39;#string&#39;
+
+src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:34
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.appointment.id == &#39;SA-562404&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.70">
+      <div class="step-ref skipped">70</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.type == &#39;S&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.code == &#39;201&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:76]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:76]</span>
+                <span class="scenario-name">Patch Appointment with invalid appointmentId</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>19</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:76]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/appointment/INVALID-ID&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.79">{
+  &quot;appointment&quot;: {
+    &quot;slot&quot;: {
+      &quot;id&quot;: &quot;bff13821-73c3-42cc-9327-b05c7df5a67f&quot;
+    },
+    &quot;reason&quot;: &quot;Agendamento para Instalação de Fibra&quot;
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.90">05:00:12.053 request:
+1 &gt; PATCH http://localhost:4010/appointment/INVALID-ID
+1 &gt; Authorization: Bearer dummy AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 120
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;appointment&quot;:{&quot;slot&quot;:{&quot;id&quot;:&quot;bff13821-73c3-42cc-9327-b05c7df5a67f&quot;},&quot;reason&quot;:&quot;Agendamento para Instalação de Fibra&quot;}}
+
+05:00:12.067 response time in milliseconds: 12
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; sl-violations: [{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;order&quot;,&quot;type&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;enum&quot;,&quot;message&quot;:&quot;Response body property order.type must be equal to one of the allowed values: InstalaÃ§Ã£o, Retirada, RemanejamentoPonto, ChamadoTecnico&quot;},{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;control&quot;,&quot;code&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Response body property control.code must be string&quot;}]
+1 &lt; Content-type: application/json
+1 &lt; Content-Length: 408
+1 &lt; Date: Tue, 02 Jul 2024 05:00:12 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref failed">91</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.91">05:00:12.068 src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:91
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 12, url: http://localhost:4010/appointment/INVALID-ID, response: 
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:91
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref skipped">92</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.type == &#39;E&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref skipped">93</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.code == &#39;404&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref skipped">94</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.message == &#39;Not Found&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:96]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:96]</span>
+                <span class="scenario-name">Patch Appointment with invalid slot id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>16</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:96]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:96]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/appointment/SA-562403&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.99">{
+  &quot;appointment&quot;: {
+    &quot;slot&quot;: {
+      &quot;id&quot;: &quot;invalid-slot-id&quot;
+    },
+    &quot;reason&quot;: &quot;Agendamento para Instalação de Fibra&quot;
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.110">05:00:12.080 request:
+1 &gt; PATCH http://localhost:4010/appointment/SA-562403
+1 &gt; Authorization: Bearer dummy AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 99
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;appointment&quot;:{&quot;slot&quot;:{&quot;id&quot;:&quot;invalid-slot-id&quot;},&quot;reason&quot;:&quot;Agendamento para Instalação de Fibra&quot;}}
+
+05:00:12.090 response time in milliseconds: 9
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; sl-violations: [{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;order&quot;,&quot;type&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;enum&quot;,&quot;message&quot;:&quot;Response body property order.type must be equal to one of the allowed values: InstalaÃ§Ã£o, Retirada, RemanejamentoPonto, ChamadoTecnico&quot;},{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;control&quot;,&quot;code&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Response body property control.code must be string&quot;}]
+1 &lt; Content-type: application/json
+1 &lt; Content-Length: 408
+1 &lt; Date: Tue, 02 Jul 2024 05:00:12 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref failed">111</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.111">05:00:12.092 src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:111
+Then status 404
+status code was: 200, expected: 404, response time in milliseconds: 9, url: http://localhost:4010/appointment/SA-562403, response: 
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:111
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref skipped">112</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.type == &#39;E&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.113">
+      <div class="step-ref skipped">113</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.code == &#39;404&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref skipped">114</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.message == &#39;Identificador do Slot não encontrado ou expirado&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:116]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:116]</span>
+                <span class="scenario-name">Patch Appointment without authorization</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>20</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:116]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:116]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:116]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:116]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/appointment/SA-562403&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.118">
+      <div class="step-ref passed">118</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.118">{
+  &quot;appointment&quot;: {
+    &quot;slot&quot;: {
+      &quot;id&quot;: &quot;bff13821-73c3-42cc-9327-b05c7df5a67f&quot;
+    },
+    &quot;reason&quot;: &quot;Agendamento para Instalação de Fibra&quot;
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.129">
+      <div class="step-ref passed">129</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.129">05:00:12.101 request:
+1 &gt; PATCH http://localhost:4010/appointment/SA-562403
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 120
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;appointment&quot;:{&quot;slot&quot;:{&quot;id&quot;:&quot;bff13821-73c3-42cc-9327-b05c7df5a67f&quot;},&quot;reason&quot;:&quot;Agendamento para Instalação de Fibra&quot;}}
+
+05:00:12.117 response time in milliseconds: 14
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; sl-violations: [{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;order&quot;,&quot;type&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;enum&quot;,&quot;message&quot;:&quot;Response body property order.type must be equal to one of the allowed values: InstalaÃ§Ã£o, Retirada, RemanejamentoPonto, ChamadoTecnico&quot;},{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;control&quot;,&quot;code&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Response body property control.code must be string&quot;}]
+1 &lt; Content-type: application/json
+1 &lt; Content-Length: 408
+1 &lt; Date: Tue, 02 Jul 2024 05:00:12 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref failed">130</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.130">05:00:12.118 src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:130
+Then status 401
+status code was: 200, expected: 401, response time in milliseconds: 14, url: http://localhost:4010/appointment/SA-562403, response: 
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:130
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref skipped">131</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.type == &#39;E&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.132">
+      <div class="step-ref skipped">132</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.code == &#39;401&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.133">
+      <div class="step-ref skipped">133</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.message == &#39;Unauthorized&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:135]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:135]</span>
+                <span class="scenario-name">Patch Appointment with invalid scope</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>21</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:135]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:135]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:135]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:135]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.136">
+      <div class="step-ref passed">136</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/appointment/SA-562403&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.137">
+      <div class="step-ref passed">137</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.138">
+      <div class="step-ref passed">138</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.138">{
+  &quot;appointment&quot;: {
+    &quot;slot&quot;: {
+      &quot;id&quot;: &quot;bff13821-73c3-42cc-9327-b05c7df5a67f&quot;
+    },
+    &quot;reason&quot;: &quot;Agendamento para Instalação de Fibra&quot;
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.149">
+      <div class="step-ref passed">149</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.149">05:00:12.129 request:
+1 &gt; PATCH http://localhost:4010/appointment/SA-562403
+1 &gt; Authorization: Bearer dummy AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 120
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;appointment&quot;:{&quot;slot&quot;:{&quot;id&quot;:&quot;bff13821-73c3-42cc-9327-b05c7df5a67f&quot;},&quot;reason&quot;:&quot;Agendamento para Instalação de Fibra&quot;}}
+
+05:00:12.144 response time in milliseconds: 14
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; sl-violations: [{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;order&quot;,&quot;type&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;enum&quot;,&quot;message&quot;:&quot;Response body property order.type must be equal to one of the allowed values: InstalaÃ§Ã£o, Retirada, RemanejamentoPonto, ChamadoTecnico&quot;},{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;control&quot;,&quot;code&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Response body property control.code must be string&quot;}]
+1 &lt; Content-type: application/json
+1 &lt; Content-Length: 408
+1 &lt; Date: Tue, 02 Jul 2024 05:00:12 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.150">
+      <div class="step-ref failed">150</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 403</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.150">05:00:12.146 src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:150
+Then status 403
+status code was: 200, expected: 403, response time in milliseconds: 14, url: http://localhost:4010/appointment/SA-562403, response: 
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:150
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.151">
+      <div class="step-ref skipped">151</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.type == &#39;E&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.152">
+      <div class="step-ref skipped">152</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.code == &#39;403&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref skipped">153</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.message == &#39;Forbidden - Scope Not Permitted&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:155]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:155]</span>
+                <span class="scenario-name">Patch Appointment with locked appointment</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>17</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:155]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:155]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def urlBase = karate.properties[&#39;url.base&#39;] || karate.get(&#39;urlBase&#39;, &#39;http://localhost:4010&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:155]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url urlBase</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:155]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = karate.properties[&#39;AUTH_TOKEN&#39;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.156">
+      <div class="step-ref passed">156</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/appointment/SA-562403&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.157">
+      <div class="step-ref passed">157</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.158">
+      <div class="step-ref passed">158</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.158">{
+  &quot;appointment&quot;: {
+    &quot;slot&quot;: {
+      &quot;id&quot;: &quot;bff13821-73c3-42cc-9327-b05c7df5a67f&quot;
+    },
+    &quot;reason&quot;: &quot;Agendamento para Instalação de Fibra&quot;
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.169">
+      <div class="step-ref passed">169</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PATCH</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.169">05:00:12.158 request:
+1 &gt; PATCH http://localhost:4010/appointment/SA-562403
+1 &gt; Authorization: Bearer dummy AUTH_TOKEN
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 120
+1 &gt; Host: localhost:4010
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;appointment&quot;:{&quot;slot&quot;:{&quot;id&quot;:&quot;bff13821-73c3-42cc-9327-b05c7df5a67f&quot;},&quot;reason&quot;:&quot;Agendamento para Instalação de Fibra&quot;}}
+
+05:00:12.170 response time in milliseconds: 10
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; sl-violations: [{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;order&quot;,&quot;type&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;enum&quot;,&quot;message&quot;:&quot;Response body property order.type must be equal to one of the allowed values: InstalaÃ§Ã£o, Retirada, RemanejamentoPonto, ChamadoTecnico&quot;},{&quot;location&quot;:[&quot;response&quot;,&quot;body&quot;,&quot;control&quot;,&quot;code&quot;],&quot;severity&quot;:&quot;Error&quot;,&quot;code&quot;:&quot;type&quot;,&quot;message&quot;:&quot;Response body property control.code must be string&quot;}]
+1 &lt; Content-type: application/json
+1 &lt; Content-Length: 408
+1 &lt; Date: Tue, 02 Jul 2024 05:00:12 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.170">
+      <div class="step-ref failed">170</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 423</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.170">05:00:12.171 src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:170
+Then status 423
+status code was: 200, expected: 423, response time in milliseconds: 10, url: http://localhost:4010/appointment/SA-562403, response: 
+{&quot;order&quot;:{&quot;type&quot;:&quot;Instalacao&quot;,&quot;associatedDocument&quot;:&quot;VTT001&quot;,&quot;addressChange&quot;:{&quot;flag&quot;:true}},&quot;customer&quot;:{&quot;subscriberId&quot;:&quot;VTAL001&quot;},&quot;appointment&quot;:{&quot;id&quot;:&quot;SA-562403&quot;,&quot;startDate&quot;:&quot;2021-05-30T13:00:00&quot;,&quot;finishDate&quot;:&quot;2021-05-30T18:00:00&quot;,&quot;priority&quot;:{&quot;flag&quot;:true,&quot;reason&quot;:&quot;Cliente Diamond&quot;}},&quot;address&quot;:{&quot;id&quot;:17713},&quot;products&quot;:{&quot;product&quot;:[{&quot;type&quot;:&quot;Banda Larga&quot;}]},&quot;control&quot;:{&quot;type&quot;:&quot;S&quot;,&quot;code&quot;:201,&quot;message&quot;:&quot;Created&quot;}}
+src/test/java/org/springframework/api_tests/appointment_appointmentId_patch.feature:170
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.171">
+      <div class="step-ref skipped">171</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.type == &#39;E&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.172">
+      <div class="step-ref skipped">172</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.code == &#39;423&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.173">
+      <div class="step-ref skipped">173</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.control.message == &#39;Agendamento não pode ser alterado&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
