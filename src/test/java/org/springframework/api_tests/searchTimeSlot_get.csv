@@ -1,0 +1,3 @@
+addressId,subscriberId,associatedDocument,startDate,finishDate,orderType,addressChangeFlag,productType,priorityFlag,priorityReason
+"17713","VTAL001","VTT001",2021,2021,"Instalacao","true","Banda Larga","true","Cliente Diamond"
+"17713","VTAL001","VTT001",2021,2021,"Retirada","false","Banda Larga","false",""
