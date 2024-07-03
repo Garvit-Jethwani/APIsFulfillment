@@ -1,0 +1,5 @@
+subscriberId,id,type,startDate,endDate,state,diagnostic
+"SVTAL001",22119329,"diagnostic",2023,"","IN_PROGRESS","{"code":"NOK","messages":[{"errorCode":1,"description":"Foram identificados problemas e serão executadas ações de correção"}]}"
+"SVTAL001",22119329,"diagnostic",2023,2023,"NOT_FOUND","null"
+"SVTAL001",22119329,"diagnostic",2023,2023,"INVENTORY_FAULT","null"
+"SVTAL001",22119329,"diagnostic",2023,2023,"FINISHED","{"code":"OK","messages":[]}"
