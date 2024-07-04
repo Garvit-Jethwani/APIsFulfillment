@@ -1,0 +1,13 @@
+scenario,payload
+"Comunicado de abertura de incidente de Rede (interrupção)","read('classpath:examples/abertura_incidente_interrupcao.json')"
+"Comunicado de abertura de incidente de Rede (congestionamento)","read('classpath:examples/abertura_incidente_congestionamento.json')"
+"Comunicado de atualização de incidente de Rede (interrupção)","read('classpath:examples/atualizacao_incidente_interrupcao.json')"
+"Comunicado de atualização de incidente de Rede (congestionamento)","read('classpath:examples/atualizacao_incidente_congestionamento.json')"
+"Comunicado de cancelamento de incidente Rede (interrupção)","read('classpath:examples/cancelamento_incidente_interrupcao.json')"
+"Comunicado de cancelamento de incidente Rede (congestionamento)","read('classpath:examples/cancelamento_incidente_congestionamento.json')"
+"Comunicado de finalização do incidente Rede (interrupção)","read('classpath:examples/finalizacao_incidente_interrupcao.json')"
+"Comunicado de finalização do incidente Rede(congestionamento)","read('classpath:examples/finalizacao_incidente_congestionamento.json')"
+"Comunicado de abertura de manutenção de Rede","read('classpath:examples/abertura_manutencao.json')"
+"Comunicado de atualização de manutenção de Rede","read('classpath:examples/atualizacao_manutencao.json')"
+"Comunicado de cancelamento de manutenção de Rede","read('classpath:examples/cancelamento_manutencao.json')"
+"Comunicado de finalização de manutenção de Rede","read('classpath:examples/finalizacao_manutencao.json')"
