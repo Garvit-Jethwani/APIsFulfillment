@@ -1,0 +1,4 @@
+type,subscriberId,statusCode,responseType,responseCode,responseMessage
+"diagnostic","SVTAL001","200","S","200","OK"
+"diagnostic","INVALID","406","E","406","Not Acceptable"
+"invalid","SVTAL001","400","E","400","Bad Request"
