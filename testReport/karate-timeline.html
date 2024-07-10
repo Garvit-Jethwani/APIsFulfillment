@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[1.1:39]","start":1720590767044,"end":1720590767533,"title":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[1.1:39] 11:22:47.044-11:22:47.533 Request Opening Service Test"},{"id":2,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[1.2:39]","start":1720590767540,"end":1720590767561,"title":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[1.2:39] 11:22:47.540-11:22:47.561 Request Opening Service Test","className":"failed"},{"id":3,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[1.3:39]","start":1720590767569,"end":1720590767586,"title":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[1.3:39] 11:22:47.569-11:22:47.586 Request Opening Service Test"},{"id":4,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[2:41]","start":1720590767592,"end":1720590767609,"title":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[2:41] 11:22:47.592-11:22:47.609 Successful Service Test Request"},{"id":5,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[3:63]","start":1720590767614,"end":1720590767623,"title":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[3:63] 11:22:47.614-11:22:47.623 Unauthorized Request","className":"failed"},{"id":6,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[4:82]","start":1720590767628,"end":1720590767636,"title":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[4:82] 11:22:47.628-11:22:47.636 Forbidden Request - Scope Not Permitted","className":"failed"},{"id":7,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[5:102]","start":1720590767640,"end":1720590767648,"title":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[5:102] 11:22:47.640-11:22:47.648 Not Found Request","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[6:122]","start":1720590767652,"end":1720590767659,"title":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[6:122] 11:22:47.652-11:22:47.659 Too Many Requests","className":"failed"},{"id":9,"group":1,"content":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[7:142]","start":1720590767664,"end":1720590767671,"title":"src\/test\/java\/org\/springframework\/api_tests\/serviceTest_post[7:142] 11:22:47.664-11:22:47.671 Internal Server Error","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
