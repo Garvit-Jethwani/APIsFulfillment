@@ -1,0 +1,8 @@
+subscriberId,id,type,startDate,endDate,state,diagnostic,hintOperations,result
+"SVTAL001",22119329,"diagnostic",2023,"","IN_PROGRESS","{"code":"NOK","messages":[{"errorCode":1,"description":"Foram identificados problemas e serão executadas ações de correção"}]}","null","null"
+"SVTAL001",22119329,"diagnostic",2023,2023,"NOT_FOUND","null","null","null"
+"SVTAL001",22119329,"diagnostic",2023,2023,"INVENTORY_FAULT","null","null","null"
+"SVTAL001",22119329,"diagnostic",2023,2023,"FINISHED","{"code":"OK","messages":[]}","{"actions":[{"type":"Instruir o Cliente","hintType":"MANUAL"}]}","{"services":[{"perfil":"600 MBPS"}]}"
+"SVTAL001",22119329,"diagnostic",2023,2023,"FINISHED","{"code":"OK","messages":[{"errorCode":"HGW_WIFI_02","description":"[42] Interface Wifi inativa. Necessário verificar com o cliente se a interface wifi deve ser ativada e proceder a ação se confirmado.","criticity":0}]}","null","{"services":[{"perfil":"600 MBPS"}],"orders":[{"id":22829,"associatedDocument":"R-312839"}]}"
+"TesteFTTH002","a84141b6-67c0-4103-b01b-f77e00e43b4e","diagnostic",2023,2023,"FINISHED","{"code":"NOK","messages":[]}","{"actions":[{"type":"Abrir Chamado Tecnico","hintType":"MANUAL"}]}","{"services":[{"perfil":"600 MBPS"}]}"
+"SVTAL001",22119329,"diagnostic",2023,2023,"FINISHED","null","{"actions":[{"type":"Abrir Chamado Tecnico","hintType":"MANUAL"}]}","{"services":[{"perfil":"600 MBPS"}]}"
