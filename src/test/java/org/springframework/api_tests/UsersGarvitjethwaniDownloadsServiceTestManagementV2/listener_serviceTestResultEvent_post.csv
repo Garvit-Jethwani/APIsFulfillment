@@ -1,0 +1,3 @@
+subscriberId,id,type,startDate,endDate,state,diagnostic,hintOperations,result
+"subscriber1",123,"test_type1",2023,2023,"COMPLETED","null","null","null"
+"subscriber2",223,"test_type2",2023,2023,"IN_PROGRESS","null","null","null"
