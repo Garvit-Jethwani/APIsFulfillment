@@ -1,0 +1,3 @@
+date,subscriberId,id,correlationOrder,associatedDocument,type,code,description,lostEquipment,resource,expectedStatus
+2023,"sub123","ord123","corr123","doc123","type1","CD1","Desc1","true","res1","200"
+2023,"sub456","ord456","corr456","doc456","type2","CD2","Desc2","false","res2","201"
